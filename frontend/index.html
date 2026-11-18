@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PBS Wisconsin Help Assistant</title>
+    <meta name="color-scheme" content="light dark" />
+    <!-- Run before Vite loads CSS/React, so the first painted frame has the right theme. -->
+    <script>
+      (function () {
+        var value = 'system';
+        try {
+          var saved = localStorage.getItem('pbs-help-theme');
+          if (saved === 'light' || saved === 'dark' || saved === 'system') value = saved;
+        } catch (e) { /* storage may be disabled */ }
+        var isDark = value === 'dark' ||
+          (value === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
+        document.documentElement.dataset.themePreference = value;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

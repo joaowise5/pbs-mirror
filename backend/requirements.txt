@@ -1,0 +1,21 @@
+fastapi
+uvicorn
+anthropic>=1.15
+python-dotenv
+pydantic>=2.11
+httpx
+# rag.py: local embeddings (ONNX, no API key) and vector math
+fastembed>=0.9,<1
+numpy
+# help_crawl.py
+beautifulsoup4>=4.12
+markdownify>=1.2,<2
+# tests
+pytest
+# database
+sqlalchemy
+pyjwt
+pwdlib[argon2]
+python-multipart
+email-validator
+psycopg2-binary

@@ -1,0 +1,29 @@
+{
+  "crawled_at": "2026-11-09T22:29:09Z",
+  "crawler": "help_crawl.py (pbs-wisconsin-student-help-crawler/1.0)",
+  "sources": {
+    "station_support": {
+      "saved": 5,
+      "failed": 0
+    },
+    "viewer_help": {
+      "saved": 341,
+      "failed": 0
+    },
+    "contact": {
+      "saved": 1,
+      "failed": 0
+    },
+    "pbs_wisconsin": {
+      "saved": 7,
+      "failed": 0
+    }
+  },
+  "total_pages": 354,
+  "total_words": 85967,
+  "estimated_tokens": 141453,
+  "reused_unchanged": 342,
+  "duplicates_merged": 1,
+  "http_requests": 17,
+  "robots_skipped": []
+}

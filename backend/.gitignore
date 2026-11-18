@@ -1,0 +1,4 @@
+data/feedback.jsonl
+data/usage.jsonl
+data/help_index/
+data/.fastembed_cache/

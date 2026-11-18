@@ -1,0 +1,22 @@
+# env
+.env
+*.env
+.env.local
+.env.*.local
+!.env.example
+
+# Python
+venv/
+.venv/
+__pycache__/
+
+# Node / React
+node_modules/
+dist/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Database
+pbs_chat.db

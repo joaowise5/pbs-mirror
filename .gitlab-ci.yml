@@ -1,0 +1,17 @@
+stages:
+  - lint
+
+backend-lint:
+  stage: lint
+  image: python:3.11-slim
+  script:
+    - pip install -r backend/requirements.txt
+    - python -m pytest -q backend/tests
+
+frontend-build:
+  stage: lint
+  image: node:18-alpine
+  script:
+    - cd frontend
+    - npm ci
+    - npm run build
